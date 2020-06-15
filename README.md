@@ -56,6 +56,9 @@ The algorithm return the final centroids point based on:
 - the tollerance for stopping the iterations
 
 Running the program will create in the output folder a file containing the coordinated of each centroid
+
+If you use IntelliJ or some other IDE, clone the repository to a local folder and impoert the jars file by execute the pom.xml file with maven.
+
 ### Output result file
 ```
 0	-25.474,17.934,-9.333,-7.991,-1.379,21.269,-4.432
