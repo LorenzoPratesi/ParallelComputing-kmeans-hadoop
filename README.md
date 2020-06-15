@@ -33,16 +33,7 @@ Start clustering with hadoop by typing this command:
 ```
 hadoop jar KMeansHadoop.jar PointsKMeans -i <IN> -o <OUT> -d <DIM> -k <CLUSTERS> [-e <EPS>]
 ```
-#### Example 
-```
-hadoop jar KMeansHadoop.jar PointsKMeans -i INPUT_PATH -o OUTPUT_PATH -d 7 -k 6 -e 1e-8
-```
-Run kmeans on all the data file in INPUT_PATH and place the results in OUTPUT_PATH. 
 
-The algorithm return the final centroids point based on:
-- the dimension of each point that is 7
-- the number of cluser that is 6
-- the tollerance for stopping the iterations
 
 #### Options description
 
@@ -53,6 +44,16 @@ The algorithm return the final centroids point based on:
 [-k] stands for the number of clusters
 [-e] stands for the tollerance of significant decimals to consider when comparing floats (optional, default value: 1e-3)
 ```  
+#### Example 
+```
+hadoop jar KMeansHadoop.jar PointsKMeans -i INPUT_PATH -o OUTPUT_PATH -d 7 -k 6 -e 1e-8
+```
+Run kmeans on all the data file in INPUT_PATH and place the results in OUTPUT_PATH. 
+
+The algorithm return the final centroids point based on:
+- the dimension of each point that is 7
+- the number of cluser that is 6
+- the tollerance for stopping the iterations
 
 Running the program will create in the output folder a file containing the coordinated of each centroid
 ### Output result file
