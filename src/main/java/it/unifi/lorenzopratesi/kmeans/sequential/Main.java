@@ -1,0 +1,34 @@
+package it.unifi.lorenzopratesi.kmeans.sequential;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Main {
+    public static final int INPUT_SIZE = 50000;
+    public static final int CLUSTERS = 500;
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        // Generate a list of items.
+        List<DoublePoint> inputs = new ArrayList<>();
+        Random generator = new Random();
+
+        for (int i = 0; i < INPUT_SIZE; i++) {
+            inputs.add(new DoublePoint(generator.nextDouble(), generator.nextDouble()));
+        }
+
+        KMeans clusterer = new KMeans();
+        System.out.println("Clustering items");
+        List<DoublePoint> results = clusterer.cluster(inputs, CLUSTERS);
+        DoublePoint point;
+
+        for (int i = 0; i < results.size(); i++) {
+            point = results.get(i);
+            System.out.println("Cluster " + (i + 1) + ": " + point.toString());
+        }
+    }
+
+}
