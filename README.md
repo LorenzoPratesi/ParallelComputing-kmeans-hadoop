@@ -54,7 +54,7 @@ Running the program will create in the output folder a file containing the coord
 ```
 
 ## Visualizations
-You can use [plot.py](https://github.com/LorenzoPratesi/ParallelComputing-kmeans-hadoop/blob/master/plot.py) to create some 2d or 3d plots.
+You can use [plot.py](https://github.com/LorenzoPratesi/ParallelComputing-kmeans-hadoop/blob/master/plot.py) to create some 2D or 3D plots.
 
 Example with k = 6, 1000 2D points in range (-100; 100)
 ```
