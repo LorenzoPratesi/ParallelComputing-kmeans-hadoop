@@ -57,7 +57,7 @@ The algorithm return the final centroids point based on:
 
 Running the program will create in the output folder a file containing the coordinated of each centroid
 
-If you use IntelliJ or some other IDE, clone the repository to a local folder and impoert the jars file by execute the pom.xml file with maven.
+If you use IntelliJ or some other IDE, clone the repository to a local folder and import the jars file by executing the pom.xml file with maven.
 
 ### Output result file
 ```
