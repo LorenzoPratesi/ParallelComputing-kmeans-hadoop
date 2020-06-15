@@ -24,18 +24,20 @@ python generate_points.py 7 5000 50
 ...
 ```
 
-
-Start kmeans clustering with hadoop by typing this command:
+### Run kmeans clustering
+Start clustering with hadoop by typing this command:
 
 ```
 hadoop jar KMeansHadoop.jar PointsKMeans -i <IN> -o <OUT> -d <DIM> -k <CLUSTERS> [-e <EPS>]
+```
+#### Options description
 
-Options description: 
-	[-i] stands for the input folder.
-	[-o] stands for the output folder.
-	[-d] stands for the number of dimensions of each data point 
-	[-k] stands for the number of clusters
-        [-e] stands for the tollerance of significant decimals to consider when comparing floats
+```
+[-i] stands for the input folder.
+[-o] stands for the output folder.
+[-d] stands for the number of dimensions of each data point 
+[-k] stands for the number of clusters
+[-e] stands for the tollerance of significant decimals to consider when comparing floats
 ```  
 
 Running the program will create in the output folder a file containing the coordinated of each centroid
