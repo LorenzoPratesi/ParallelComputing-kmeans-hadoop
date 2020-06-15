@@ -2,7 +2,7 @@
 
 The enlarging volumes of information emerging by the progress of technology, makes clustering of very large scale of data a challenging task. 
 
-This paper presents a parallel k-means clustering algorithms based on Apache Hadoop MapReduce model which is a simple and powerful parallel programming technique. 
+This [paper](https://github.com/LorenzoPratesi/ParallelComputing-kmeans-hadoop/blob/master/report/PC-kmeans-hadoop-report.pdf) presents a parallel k-means clustering algorithms based on Apache Hadoop MapReduce model which is a simple and powerful parallel programming technique. 
 
 The tests were performed on intel i7 hexa core in a pseudo-distributed mode and then in a fully distributed mode with Amazon EMR. The results show that the proposed algorithm can scale well and efficiently process large datasets on commodity hardware.
 
