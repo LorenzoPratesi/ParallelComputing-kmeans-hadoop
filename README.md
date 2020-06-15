@@ -4,7 +4,7 @@ k-means clustering with Apache Hadoop
 The enlarging volumes of information emerging by the progress of technology, makes clustering of very large scale of data a challenging task. This paper presents a parallel k-means clustering algorithms based on Apache Hadoop MapReduce model which is a simple and powerful parallel programming technique. The tests were performed on intel i7 hexa core in a pseudo-distributed mode and then in a fully distributed mode with Amazon EMR. The results show that the proposed algorithm can scale well and efficiently process large datasets on commodity hardware.
 
 ## Usage
-Generate the points for the data_set with the python script [generate_points.py](https://github.com/user/repo/blob/branch/other_file.md)
+Generate the points for the data_set with the python script [generate_points.py](https://github.com/LorenzoPratesi/ParallelComputing-kmeans-hadoop/blob/master/generate_points.py)
 (parameters, numPoints, range). 
 
 The example below generates 5000 points where each point have 7 dimensions in range (-50, 50).
@@ -48,3 +48,30 @@ Running the program will create in the output folder a file containing the coord
 4	26.664,9.637,-25.983,-5.845,-0.004,3.174,8.597
 ```
 
+## Visualizations
+You can use [plot.py](https://github.com/LorenzoPratesi/ParallelComputing-kmeans-hadoop/blob/master/plot.py) to create some 2d or 3d plots.
+
+Example with k = 6, 1000 2D points in range (-100; 100)
+```
+python generatePoints.py 2 1000 100
+```
+![2d](images/Kmeans_1000pt_6K.png)
+
+Example with k = 6, 10000 2D points in range (-100; 100)
+```
+python generatePoints.py 2 10000 100
+```
+![2d](images/Kmeans_10000pt_30K.png)
+
+Example with k = 10, 1000 3D points in range (-300; 300)
+```
+python generatePoints.py 3 1000 300
+```
+![2d](images/Kmeans_1000pt_10K_3d.png)
+
+
+Example with k = 30, 10000 3D points in range (-100; 100)
+```
+python generatePoints.py 3 10000 100
+```
+![2d](images/Kmeans_10000pt_30K_3d.png)
